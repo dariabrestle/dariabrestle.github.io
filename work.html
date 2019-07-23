@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>View My Work</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/dist/js/bootbox.min.js"></script>
+    <script>
+      $(function() {
+        $("#dialog").dialog({
+          autoOpen: false,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "explode",
+            duration: 1000
+          }
+        });
+
+        $("#opener").on("click", function() {
+          $("#dialog").dialog("open");
+        });
+      });
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item ">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item current">
+            <a href="work.html" class="nav-link">My work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">How To Reach Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="work">
+      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+      <h2 class="sm-heading">Check out some of my projects...</h2>
+      <div class="projects">
+        <div class="item">
+          <a href="#!"> <img src="img/myworkIMG/1.png" alt="Project"/></a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye">Project</i></a>
+          <!--<button onclick="info()"></button>-->
+          <div id="dialog" title="Basic dialog">
+            <p>
+              This is an animated dialog which is useful for displaying
+              information. The dialog window can be moved, resized and closed
+              with the 'x' icon.
+            </p>
+          </div>
+
+          <button id="opener">Open Dialog</button>
+
+          <a href="https://github.com/dariabrestle/Symphonia" class="btn-dark">
+            <i class="fab fa-github">Github</i></a
+          >
+        </div>
+        <div class="item">
+          <a href="#!"> <img src="img/myworkIMG/2.png" alt="Project"/></a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye">Project</i></a>
+          <a href="#" class="btn-dark"> <i class="fab fa-github">Github</i></a>
+        </div>
+        <div class="item">
+          <a href="#!"> <img src="img/myworkIMG/3.png" alt="Project"/></a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye">Project</i></a>
+          <a href="https://github.com/dariabrestle/Symphonia" class="btn-dark">
+            <i class="fab fa-github">Github</i></a
+          >
+        </div>
+        <div class="item">
+          <a href="#!"> <img src="img/myworkIMG/4.png" alt="Project"/></a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye">Project</i></a>
+          <a href="#" class="btn-dark"> <i class="fab fa-github">Github</i></a>
+        </div>
+        <div class="item">
+          <a href="#!"> <img src="img/myworkIMG/5.png" alt="Project"/></a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye">Project</i></a>
+          <a href="#" class="btn-dark"> <i class="fab fa-github">Github</i></a>
+          <div></div>
+        </div>
+      </div>
+    </main>
+    <footer id="main-footer">Copyright &copy; 2018</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
